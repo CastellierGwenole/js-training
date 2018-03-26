@@ -10,8 +10,13 @@
 // Your code :
 
 
-//* Begin of tests
-const assert = require('assert')
+//* Begin of tests*
+const str = '1337';
+const num = 42;
+const bool = false;
+const undef = undefined;
+
+const assert = require('assert');
 
 assert.strictEqual(typeof str, 'string')
 assert.strictEqual(str, '1337')
