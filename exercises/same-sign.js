@@ -1,3 +1,4 @@
+
 'use strict'
 
 /*
@@ -8,7 +9,33 @@
  */
 
 // Your code :
+let okarg = undefined;
+let okarg2 = undefined;
+function sameSign(arg, arg2){
+    if(arg == 0 && arg2 == 0){
+        return true
+    }
+    if(arg > 0){
+      okarg = true
+    }
+    else{
+        okarg = false
+    }
+    
+    if(arg2 >= 0){
+        okarg2 = true
+    }
+    else{
+        okarg2 = false
+    }
 
+    if(okarg == okarg2){
+        return true
+    }
+    else{
+        return false
+    }
+}
 //* Begin of tests
 const assert = require('assert')
 
