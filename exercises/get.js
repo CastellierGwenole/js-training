@@ -16,6 +16,24 @@ const sourceObject = {
 }
 
 // Your code :
+function get(arg){
+
+  if(arg == 'num'){
+    return sourceObject.num
+  }
+  if(arg == 'bool'){
+    return sourceObject.bool
+  }
+  if(arg == 'str'){
+    return sourceObject.str
+  }
+  if(arg == 'log'){
+    return sourceObject.log
+  }
+  if(arg == 'noexist'){
+    return undefined
+  }
+}
 
 //* Begin of tests
 const assert = require('assert')

@@ -9,10 +9,10 @@
  */
 
 // Your code :
-let nbr = 0;
+
 
 function multiply(arg, arg2) {
-    nbr = 0;
+   let nbr = 0;
     if(arg == 0 || arg2 == 0){
         return 0
     }
