@@ -12,9 +12,16 @@
  *
  */
 
+function keepFirst(string) { return string.substring(0, 2)};
+function keepLast(string) { return string.substring(string.length - 2, string.length)};
+function keepFirstLast(string) { return string.substring(2, string.length)};
+
 
 //* Begin of tests
 const assert = require('assert')
 
-assert.fail('You must write your own tests')
+assert.deepStrictEqual(keepFirst('bonjour'), 'bo')
+assert.deepStrictEqual(keepLast('bonjour'), 'ur')
+
+
 // End of tests */

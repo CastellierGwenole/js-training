@@ -10,6 +10,8 @@
 //* Begin of tests
 const assert = require('assert')
 
+function sentence(array) { return(array.join(' ')) };
+
 assert.strictEqual(typeof sentence, 'function')
 assert.strictEqual(sentence.length, 1)
 assert.deepStrictEqual(sentence([ 'a', 'b', 'c' ]), 'a b c')
